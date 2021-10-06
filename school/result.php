@@ -20,7 +20,7 @@ $row =mysqli_fetch_array($result);
 <!-- <meta http-equiv="refresh" content="30"> -->
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <title>IRCTC-plateform | ticket counter</title>
+    <title>Btech_5th_sem_result <?php echo $row['registration_no'];?></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
     <link rel="stylesheet" href="../fontawesome-free-5.14.0-web/css/all.css">
@@ -59,7 +59,7 @@ $row =mysqli_fetch_array($result);
     <div class="container  mx-auto my-5 p-5">
         <h1 class="text-center">BSEB RESULT,PATNA</h1>
         <h3 class="text-center">H R HIGH SCHOOL,MAIRWA</h3>
-
+        <p class="text-center">Vanue : xyz ,patna 800001 &nbsp; &nbsp; <b>Email : </b> xyz@yahoo.com</p>
         <section>
             <table class="table ">
                 <tr><td><b>Name : </b> <?php echo $row['sname'];?></td><td><b>Roll No.: </b> <?php echo $row['registration_no'];?></td></tr>
@@ -72,16 +72,16 @@ $row =mysqli_fetch_array($result);
                     <tr><th>Subject</th><th>Full Marks</th><th>Pass Marks</th><th>Obtained Marks</th></tr>
                     </thead>
                    
-                    <tr><td>mathematics</td><td>Full Marks</td><td>Pass Marks</td><td><?php echo $row['math'];?></td></tr>
-                    <tr><td>english</td><td>Full Marks</td><td>Pass Marks</td><td><?php echo $row['english'];?></td></tr>
-                    <tr><td>hindi</td><td>Full Marks</td><td>Pass Marks</td><td><?php echo $row['hindi'];?></td></tr>
-                    <tr><td>science</td><td>Full Marks</td><td>Pass Marks</td><td><?php echo $row['science'];?></td></tr>
-                    <tr><td>social science</td><td>Full Marks</td><td>Pass Marks</td><td><?php echo $row['sscience'];?></td></tr>
+                    <tr><td>mathematics</td><td>100</td><td>30</td><td><?php echo $row['math'];?></td></tr>
+                    <tr><td>english</td><td>100</td><td>30</td><td><?php echo $row['english'];?></td></tr>
+                    <tr><td>hindi</td><td>100</td><td>30</td><td><?php echo $row['hindi'];?></td></tr>
+                    <tr><td>science</td><td>100</td><td>30</td><td><?php echo $row['science'];?></td></tr>
+                    <tr><td>social science</td><td>100</td><td>30</td><td><?php echo $row['sscience'];?></td></tr>
                     <tr><td colspan="3" class="text-right font-weight-bold px-5">Total</td><td><?php echo $row['total'];?></td></tr>
                 </table>
                 <table class="table btable">
                 <tr><td><b>Status : </b> <?php echo $row['status'];?></td><td></td></tr>
-                <tr><td><b>Percentage : </b><?php echo $row['percentage'];?></td><td rowspan="3"></td></tr>
+                <tr><td><b>Percentage : </b><?php echo $row['percentage'];?> %</td><td rowspan="3"></td></tr>
                 <tr><td><b>Date of Result : </b> <?php echo $row['c_time'];?></td><td><b>digital signature </b> <br> Manish </td></tr>
                 </table>
         </section>
